@@ -3,7 +3,10 @@ import Script from '../Script';
 
 function Home () {
   return (
-  <Script/>
+    <div id="Home">
+        <Script/>
+    </div>
+
   );
 };
 

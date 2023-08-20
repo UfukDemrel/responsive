@@ -1,0 +1,37 @@
+.about{
+    height: 200px;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.new-img{
+    /* width: 70%; */
+}
+
+.new-song{
+    color: white;
+    font-size: 13px;
+    font-family: 'Inter';
+    margin-top: 2%;
+}
+
+.new-artist{
+    color: rgb(157, 157, 157);
+    font-size: 11px;
+    font-family: 'Inter';
+    margin-bottom: 2%;
+    display: flex;
+}
+
+.new-span{
+    color: white;
+    display: inline-flex;
+    font-size: x-large;
+    font-family: 'Inter';
+    margin-bottom: 2%;
+}
+
+.swiper-pagination-bullet{
+    display: none;
+} 

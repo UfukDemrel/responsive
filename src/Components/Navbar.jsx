@@ -2,7 +2,6 @@ import {
   Box,
   Flex,
   Button,
-  useColorModeValue,
   Stack,
   HStack,
   useDisclosure,
@@ -26,11 +25,7 @@ export default function Navbar() {
 
   return (
     <div id="navFix">
-      <Box
-        bg={useColorModeValue("gray.100", "gray.900")}
-        px={9}
-        width={["100%"]}
-      >
+      <div className="header">
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack w="42%">
             <Name />
@@ -51,33 +46,33 @@ export default function Navbar() {
                 display={{ base: "none", md: "flex" }}
                 id="myDIV"
               >
-                <Button className="btnRes">
+                <Button className="btnRes background">
                   <a href="#Home">
                     {" "}
                     <b>Home</b>
                   </a>
                 </Button>
 
-                <Button className="btnRes">
+                <Button className="btnRes background">
                   <a href="#About">
-                    <b>About</b>
+                    <b>New Releases</b>
                   </a>
                 </Button>
 
-                <Button className="btnRes">
+                <Button className="btnRes background">
                   <a href="#Skills">
                     {" "}
                     <b>Skills</b>
                   </a>
                 </Button>
 
-                <Button className="btnRes">
+                <Button className="btnRes background">
                   <a href="#Projects">
                     <b>Projects</b>
                   </a>
                 </Button>
 
-                <Button className="btnRes">
+                <Button className="btnRes background">
                   <a href="#Contact">
                     <b>Contact</b>
                   </a>
@@ -300,7 +295,7 @@ export default function Navbar() {
             </Box>
           ) : null}
         </Flex>
-      </Box>
+      </div>
     </div>
   );
 }

@@ -11,6 +11,7 @@ const myFunction = () => {
       slidesPerView={1}
       keyboard={true}
       navigation
+      loop={true}
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}

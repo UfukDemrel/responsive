@@ -321,10 +321,10 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 60px;
-  height: 60px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  width: 40px;
+  height: 40px;
+  background-color: #252525;
+  color: rgb(165, 165, 165);
   border: 1px solid rgb(211, 211, 211);
   border-radius: 55px;
   display: flex;
@@ -334,11 +334,14 @@
   transition: background-color 0.3s ease;
 }
 
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 20px;
+}
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-
+  color: rgb(155, 155, 155);
 }
 
 .swiper-button-prev {
@@ -378,6 +381,7 @@
   position: relative;
   top: 65%;
   z-index: 10;
+  margin: auto;
 }
 
 .song-button{
@@ -394,7 +398,7 @@
   top: 40%;
   left: 40%;
   position: absolute;
-  background-color: white;
+  background-color: black;
   border-radius: 2px;
   padding: 10px;
 }
@@ -409,6 +413,7 @@
   justify-content: left;
   margin-top: auto;
   margin-bottom: auto;
+  color: white;
 }
 
 .lyrics-text{
@@ -421,6 +426,7 @@
   justify-content: left;
   margin-top: auto;
   margin-bottom: auto;
+  color: white;
 }
 
 .logo-text {

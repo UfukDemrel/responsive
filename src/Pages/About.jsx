@@ -1,12 +1,13 @@
 import React from "react";
-
+import New from './New';
+import "../Pages/About.css";
 
 const About = () => {
   return (
-    <div id="About" style={{height:"800px"}}>
-      <h1 style={{fontSize:"50px",padding:"20%"}}>
-        About
-      </h1>
+    <div className="about">
+      <span className="new-span">New Releases</span>
+      <div id="About"></div>
+      <New/>
     </div>
   );
 };
