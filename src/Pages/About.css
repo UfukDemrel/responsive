@@ -5,15 +5,10 @@
     margin-bottom: 10%;
 }
 
-.new-img{
-    /* width: 70%; */
-}
-
 .new-song{
     color: white;
     font-size: 13px;
     font-family: 'Inter';
-    margin-top: 2%;
 }
 
 .new-artist{
@@ -35,3 +30,29 @@
 .swiper-pagination-bullet{
     display: none;
 } 
+
+.song-small-button{
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.stop-small{
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    z-index: 10;
+    margin: auto;
+}
+
+.stop-small:hover{
+    width: 25%;
+    height: 20%;
+    transition: 0.3s;
+}
+
+.new-div{
+    height: 10px
+}

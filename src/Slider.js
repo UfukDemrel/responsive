@@ -41,7 +41,7 @@ function Slider(props) {
             <button className='song-button' type="button" onClick={handlePlayButtonClick}>
               {isPlaying ?  <img className='stop' src="play.png" alt="Play"/> : <img className='stop' src="pause.png" alt="Pause"/>}
               <img className={`little-logo ${isPlaying ? 'active' : ''}`} src={props.limg} alt="alt" />
-              </button>
+            </button>
         </div>
     </div>
   )
