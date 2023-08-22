@@ -4,9 +4,8 @@ import "../Pages/About.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="About">
       <span className="new-span">New Releases</span>
-      <div id="About"></div>
       <New/>
     </div>
   );
