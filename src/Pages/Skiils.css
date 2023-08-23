@@ -1,6 +1,59 @@
 #Skills{
     height: 300px;
     width: 100%;
-    margin-top: 10%;
     margin-bottom: 10%;
+}
+
+.little-music{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+    margin-left: 5%;
+    margin-top: 4%;
+    opacity: 0;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content .little-music-img {
+    margin-right: 15px;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.grow:hover .little-music {
+    transition: all 0.8s ease-in-out;
+    opacity: 1;
+  }
+
+.little-div{
+    display: inline-flex;
+}
+
+.little-new-song{
+    color: white;
+    font-size: 13px;
+    font-family: 'Inter';
+    padding:0;
+    margin-top: 4%;
+}
+
+.little-new-artist{
+    color: rgb(157, 157, 157);
+    font-size: 11px;
+    font-family: 'Inter';
+    padding:0;
+    margin: 0;
+}
+
+.little-div-pacet{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0%;
+    gap: 0 3%;
 }

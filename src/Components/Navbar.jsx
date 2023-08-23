@@ -54,7 +54,7 @@ export default function Navbar() {
                 <Button className="btnRes background">
                   <a href="#Skills">
                     {" "}
-                    <b>Skills</b>
+                    <b>Choices</b>
                   </a>
                 </Button>
 

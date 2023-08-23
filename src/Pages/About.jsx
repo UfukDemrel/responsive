@@ -4,11 +4,9 @@ import "../Pages/About.css";
 
 const About = () => {
   return (
-    <div id="About">
-      <h1 style={{padding:"5% 0"}}>
-      <span className="new-span">New Releases</span>
+    <div id="About" style={{ padding: "7% 0" }}>
+      <h1 className="new-span">New Releases</h1>
       <New/>
-      </h1>
     </div>
   );
 };
