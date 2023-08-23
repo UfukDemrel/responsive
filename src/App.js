@@ -1,11 +1,12 @@
 import './App.css';
 import './Slider.css';
+import './Pages/Skiils.css';
 import Navbar from './Components/Navbar';
 import About from './Pages/About';
-import Contact from './Pages/Contact';
+// import Contact from './Pages/Contact';
 import Home from './Pages/Home';
 import Skills from './Pages/Skiils';
-import Projects from './Pages/Projects';
+// import Projects from './Pages/Projects';
 
 function App() {
   return (
@@ -13,10 +14,8 @@ function App() {
       <div className="container">
         <Navbar />
         <Home/>
-        <About />
-        <Skills />
-        <Projects/>
-        <Contact/>
+        <About/>
+        <Skills/>
       </div>
     </div>
   );

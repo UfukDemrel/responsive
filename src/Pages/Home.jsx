@@ -4,7 +4,7 @@ import Script from '../Script';
 function Home () {
   return (
     <div id="Home">
-        <Script/>
+      <Script/>
     </div>
 
   );

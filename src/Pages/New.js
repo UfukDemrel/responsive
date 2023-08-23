@@ -36,7 +36,6 @@ const New = () => {
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       navigation
-      loop
       keyboard
       breakpoints={{
         1240: {
@@ -187,6 +186,33 @@ const New = () => {
         </div>
         <div className='new-song'>Sor</div>
         <span className='new-artist'>Edis ve Gülşen</span>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <img className='new-img' src='https://i.scdn.co/image/ab67616d0000b27338d487a236c25e08f52464c9' alt='alt'/>
+        <div className='new-div'>
+          <button
+            className="song-small-button"
+            type="button"
+            onClick={() => handlePlayButtonClick(5)}
+          >
+            {activeSlideIndex === 5 ? (
+              <img className='stop-small' src="smallpause.png" alt="Pause" />
+            ) : (
+              <img className='stop-small' src="smallplay.png" alt="Play" />
+            )}
+          </button>
+          <audio
+            style={{ display: 'none' }}
+            className="audio"
+            ref={(element) => audioRefs.current[5] = element}
+            controls
+          >
+            <source src="harbiguzel.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div className='new-song'>Harbi Güzel</div>
+        <span className='new-artist'>Murat Boz</span>
       </SwiperSlide>
 
     </Swiper>

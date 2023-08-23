@@ -1,5 +1,5 @@
 #About{
-    height: 200px;
+    height: 300px;
     width: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -22,8 +22,9 @@
 .new-span{
     color: white;
     display: inline-flex;
-    font-size: x-large;
-    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 100;
+    font-family: inter, sans serif;
     margin-bottom: 2%;
 }
 
