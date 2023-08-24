@@ -26,7 +26,7 @@ const myFunction = () => {
     </SwiperSlide>
 
     <SwiperSlide>
-        <Slider name="Maroon 5" song="Maps" bimg="maroon.jpg" limg="maps.jpg" music="marroon.mp3" />
+        <Slider name="Maroon 5" song="Maps" bimg="maroon.jpg" limg="maps.jpg" music="maroon.mp3" />
     </SwiperSlide>
 
     <SwiperSlide>

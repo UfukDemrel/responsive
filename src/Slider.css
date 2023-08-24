@@ -310,8 +310,139 @@
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767px) and (max-width: 1023px){
+  .song-button{
+    width: 38%;
+    border: none;
+    background: none;
+    padding: 0;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    display: flex;
+    justify-content: center;
+  }
 
+  .mobile{
+    display: none;
+  }  
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #252525;
+    color: rgb(165, 165, 165);
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px;
+  }
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(155, 155, 155);
+  }
+  
+  .swiper-button-prev {
+    left: 10px;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  .big-logo{
+    width: 50%;
+    display: inline-flex;
+    border-radius: 5px;
+  }
+  
+  .little{
+    /* display: inline;
+    margin-left: 20%; */
+  }
+  
+  .little-logo{
+    width: 258px;
+    height: 258px;
+    display: inline-flex;
+    border-radius: 2px;
+    opacity: 0.4;
+  }
+  
+  .little-logo.active {
+    opacity: 0.9;
+  }
+  
+  .stop{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    margin: auto;
+  }
+  
+  .lyrics{
+    width: 55%;
+    display: inline-block;
+    top: 19%;
+    left: 40%;
+    position: absolute;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px;
+    opacity: 0.7;
+  }
+  
+  .lyrics-title{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: inter, sans serif;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: black;
+  }
+  
+  .lyrics-text{
+    font-size: 21px;
+    font-weight: 100;
+    font-family: inter, sans serif;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: black;
+  }
+  
+  .logo-text {
+    background-color: #04AA6D;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
+
+
+@media screen and (min-width: 1024px){
 .mobile{
   display: none;
 }  
@@ -390,6 +521,8 @@
   border: none;
   background: none;
   padding: 0;
+  top: 43%;
+  position: absolute;
 }
 
 .lyrics{
@@ -404,7 +537,7 @@
 }
 
 .lyrics-title{
-  font-size: 50px;
+  font-size: 42px;
   font-weight: 700;
   font-family: inter, sans serif;
   display: flex;
@@ -417,7 +550,7 @@
 }
 
 .lyrics-text{
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 100;
   font-family: inter, sans serif;
   display: flex;

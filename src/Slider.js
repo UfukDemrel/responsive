@@ -1,14 +1,21 @@
-import React, {useState} from 'react'
+import React, { useState, useRef } from 'react';
 
 function Slider(props) {
-
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = React.createRef();
+  const audioRef = useRef(null); // Use useRef instead of React.createRef()
 
   const handlePlayButtonClick = () => {
     const audio = audioRef.current;
 
     if (audio.paused) {
+      // Pause any other playing audio before starting a new one
+      const allAudioElements = document.querySelectorAll('audio.audio');
+      allAudioElements.forEach((element) => {
+        if (!element.paused && element !== audio) {
+          element.pause();
+        }
+      });
+
       audio.play();
       setIsPlaying(true);
     } else {
@@ -19,7 +26,7 @@ function Slider(props) {
 
   return (
     <div className=''>
-        <img className='big-logo' src={props.bimg} alt="alt" />
+      <img className='big-logo' src={props.bimg} alt="alt" />
         <div className="mobile">
             <audio style={{display: 'none'}} className="audio" ref={audioRef} controls>
               <source src={props.music} type="audio/mpeg"/>
@@ -44,7 +51,7 @@ function Slider(props) {
             </button>
         </div>
     </div>
-  )
+  );
 }
 
 export default Slider;

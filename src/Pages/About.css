@@ -1,58 +1,253 @@
-#About{
-    height: 300px;
-    width: 100%;
-    margin-bottom: 5%;
+@media screen and (min-width:350px) and (max-width:480px) {
+    #About{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .new-song{
+        color: black;
+        font-size: 13px;
+        font-family: 'Inter';
+    }
+    
+    .new-artist{
+        color: black;
+        font-size: 11px;
+        font-family: 'Inter';
+        margin-bottom: 2%;
+        display: flex;
+    }
+    
+    .new-span{
+        color: black;
+        display: inline-flex;
+        font-size: 25px;
+        font-weight: 100;
+        font-family: inter, sans serif;
+        margin-bottom: 2%;
+    }
+    
+    .swiper-pagination-bullet{
+        display: none;
+    } 
+    
+    .song-small-button{
+        border: none;
+        background: none;
+        padding: 0;
+    }
+    
+    .stop-small{
+        width: 20%;
+        height: 15%;
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        z-index: 10;
+        margin: auto;
+    }
+    
+    .stop-small:hover{
+        width: 25%;
+        height: 20%;
+        transition: 0.3s;
+    }
+    
+    .new-div{
+        height: 10px
+    }
 }
 
-.new-song{
-    color: white;
-    font-size: 13px;
-    font-family: 'Inter';
+@media screen and (min-width:481px) and (max-width:768px) {
+    #About{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .new-song{
+        color: black;
+        font-size: 13px;
+        font-family: 'Inter';
+    }
+    
+    .new-artist{
+        color: black;
+        font-size: 11px;
+        font-family: 'Inter';
+        margin-bottom: 2%;
+        display: flex;
+    }
+    
+    .new-span{
+        color: black;
+        display: inline-flex;
+        font-size: 25px;
+        font-weight: 100;
+        font-family: inter, sans serif;
+        margin-bottom: 2%;
+    }
+    
+    .swiper-pagination-bullet{
+        display: none;
+    } 
+    
+    .song-small-button{
+        border: none;
+        background: none;
+        padding: 0;
+    }
+    
+    .stop-small{
+        width: 20%;
+        height: 15%;
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        z-index: 10;
+        margin: auto;
+    }
+    
+    .stop-small:hover{
+        width: 25%;
+        height: 20%;
+        transition: 0.3s;
+    }
+    
+    .new-div{
+        height: 10px
+    }
 }
 
-.new-artist{
-    color: rgb(157, 157, 157);
-    font-size: 11px;
-    font-family: 'Inter';
-    margin-bottom: 2%;
-    display: flex;
+@media screen and (min-width:769px) and (max-width:1024px) {
+    #About{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .new-song{
+        color: black;
+        font-size: 13px;
+        font-family: 'Inter';
+    }
+    
+    .new-artist{
+        color: black;
+        font-size: 11px;
+        font-family: 'Inter';
+        margin-bottom: 2%;
+        display: flex;
+    }
+    
+    .new-span{
+        color: black;
+        display: inline-flex;
+        font-size: 25px;
+        font-weight: 100;
+        font-family: inter, sans serif;
+        margin-bottom: 2%;
+    }
+    
+    .swiper-pagination-bullet{
+        display: none;
+    } 
+    
+    .song-small-button{
+        border: none;
+        background: none;
+        padding: 0;
+    }
+    
+    .stop-small{
+        width: 20%;
+        height: 15%;
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        z-index: 10;
+        margin: auto;
+    }
+    
+    .stop-small:hover{
+        width: 25%;
+        height: 20%;
+        transition: 0.3s;
+    }
+    
+    .new-div{
+        height: 10px
+    }
+
+    .new-img{
+        height: 280px;
+    }
 }
 
-.new-span{
-    color: white;
-    display: inline-flex;
-    font-size: 25px;
-    font-weight: 100;
-    font-family: inter, sans serif;
-    margin-bottom: 2%;
+@media screen and (min-width:1025px) {
+    #About{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .new-song{
+        color: black;
+        font-size: 13px;
+        font-family: 'Inter';
+    }
+    
+    .new-artist{
+        color: black;
+        font-size: 11px;
+        font-family: 'Inter';
+        margin-bottom: 2%;
+        display: flex;
+    }
+    
+    .new-span{
+        color: black;
+        display: inline-flex;
+        font-size: 25px;
+        font-weight: 100;
+        font-family: inter, sans serif;
+        margin-bottom: 2%;
+    }
+    
+    .swiper-pagination-bullet{
+        display: none;
+    } 
+    
+    .song-small-button{
+        border: none;
+        background: none;
+        padding: 0;
+    }
+    
+    .stop-small{
+        width: 20%;
+        height: 15%;
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        z-index: 10;
+        margin: auto;
+    }
+    
+    .stop-small:hover{
+        width: 25%;
+        height: 20%;
+        transition: 0.3s;
+    }
+    
+    .new-div{
+        height: 10px
+    }
 }
 
-.swiper-pagination-bullet{
+.swiper-scrollbar{
     display: none;
-} 
-
-.song-small-button{
-    border: none;
-    background: none;
-    padding: 0;
+    background-color: transparent;
 }
 
-.stop-small{
-    width: 20%;
-    height: 15%;
-    position: absolute;
-    top: 50%;
-    right: 15%;
-    z-index: 10;
-    margin: auto;
-}
-
-.stop-small:hover{
-    width: 25%;
-    height: 20%;
-    transition: 0.3s;
-}
-
-.new-div{
-    height: 10px
-}

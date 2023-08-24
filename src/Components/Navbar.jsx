@@ -1,15 +1,23 @@
 import {
+  Box,
   Flex,
   Button,
+  useDisclosure,  
+  Stack,
   HStack,
+  IconButton,
 } from "@chakra-ui/react";
+import {
+  HamburgerIcon,
+  CloseIcon,
+} from "@chakra-ui/icons";
 import Name from "./Name";
 import "./Navbar.css";
 
 
 export default function Navbar() {
   // const { colorMode, toggleColorMode } = useColorMode();
-  // const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   // const onButtonClick = () => {
   //   window.open(Shubham_Verma_Resume);
@@ -71,6 +79,56 @@ export default function Navbar() {
                 </Button> */}
               </HStack>
             </HStack>
+            <IconButton
+            size={"md"}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            aria-label={"Open Menu"}
+            display={{ md: "none" }}
+            onClick={isOpen ? onClose : onOpen}
+          />
+          {isOpen ? (
+            <Box pb={1} display={{ md: "none" }}>
+              <Stack as={"nav"} spacing={4}>
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}
+                >
+                  <a href="#Home">
+                    {" "}
+                    <b>Home</b>
+                  </a>
+                </Button>
+
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}
+                >
+                  <a href="#About">
+                    <b>About</b>
+                  </a>
+                </Button>
+
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}
+                >
+                  <a href="#Skills">
+                    {" "}
+                    <b>Skills</b>
+                  </a>
+                </Button>
+              </Stack>
+            </Box>
+          ) : null}  
           </Flex>
         </Flex>
       </div>
