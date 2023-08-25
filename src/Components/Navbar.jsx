@@ -1,28 +1,41 @@
+
+import React, {useState} from "react";
 import {
-  Box,
+  // Box,
   Flex,
-  Button,
-  useDisclosure,  
-  Stack,
+  Button, 
+  // Stack,
   HStack,
-  IconButton,
+  // IconButton,
 } from "@chakra-ui/react";
-import {
-  HamburgerIcon,
-  CloseIcon,
-} from "@chakra-ui/icons";
+// import {
+//   HamburgerIcon,
+//   CloseIcon,
+// } from "@chakra-ui/icons";
 import Name from "./Name";
 import "./Navbar.css";
 
 
 export default function Navbar() {
   // const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure();
 
   // const onButtonClick = () => {
   //   window.open(Shubham_Verma_Resume);
   // };
 
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isMenuButtonOpen, setIsMenuButtonOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+    setIsMenuButtonOpen(!isMenuButtonOpen);
+  };
+
+  const closeNav = () => {
+    setIsNavOpen(false);
+    setIsMenuButtonOpen(false);
+  };
   return (
     <div id="navFix">
       <div className="header">
@@ -79,60 +92,32 @@ export default function Navbar() {
                 </Button> */}
               </HStack>
             </HStack>
-            <IconButton
-            size={"md"}
-            className="mobile-header-iconbutton"
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            aria-label={"Open Menu"}
-            display={{ md: "none" }}
-            onClick={isOpen ? onClose : onOpen}
-          />
-          {isOpen ? (
-            <Box pb={1} display={{ md: "none" }}>
-              <Stack as={"nav"} spacing={4} className="mobile-header-menu">
-                <Button
-                  className="mobile-header-button"
-                  onClick={isOpen ? onClose : onOpen}
-                  _hover={{
-                    textShadow: "#FC0 1px 0 10px",
-                    transform: "scale(1.2)",
-                  }}
-                >
-                  <a href="#Home">
-                    {" "}
-                    <b>Home</b>
-                  </a>
-                </Button>
 
-                <Button
-                  className="mobile-header-button"
-                  onClick={isOpen ? onClose : onOpen}
-                  _hover={{
-                    textShadow: "#FC0 1px 0 10px",
-                    transform: "scale(1.2)",
-                  }}
-                >
-                  <a href="#About">
-                    <b>About</b>
-                  </a>
-                </Button>
+            <div className={`App ${isNavOpen ? 'nav-open' : ''}`}>
+                <button className={`nav-button ${isMenuButtonOpen ? 'close-button' : ''}`} onClick={toggleNav}>
+                <img src={isMenuButtonOpen ? 'close.png' : 'menu.png'} alt={isMenuButtonOpen ? 'Close' : 'Menu'}/>
+                </button>
 
-                <Button
-                  className="mobile-header-button"
-                  onClick={isOpen ? onClose : onOpen}
-                  _hover={{
-                    textShadow: "#FC0 1px 0 10px",
-                    transform: "scale(1.2)",
-                  }}
-                >
-                  <a href="#Skills">
-                    {" "}
-                    <b>Skills</b>
-                  </a>
-                </Button>
-              </Stack>
-            </Box>
-          ) : null}  
+                <div class="fixed-top dineuron-menu">
+                <img className="mobile-popup-img" src='w.png' alt='alt'/>
+                  <div class="flex-center p-5">
+                    <ul class="nav flex-column">
+                      <li class="nav-item delay-1"><a onClick={closeNav} className="nav-link" href="#Home">Home</a></li>
+                      <li class="nav-item delay-2"><a onClick={closeNav} className="nav-link" href="#About">Music</a></li>
+                      <li class="nav-item delay-3"><a onClick={closeNav} className="nav-link" href="#Skills">Choices</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <img className="mobile-popup-brand" src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" alt="alt"/>
+                    <img className="mobile-popup-brand" src="https://cdn-icons-png.flaticon.com/512/154/154874.png" alt="alt"/>
+                    <img className="mobile-popup-brand" src="https://static-00.iconduck.com/assets.00/youtube-music-icon-512x512-tzy5jsl3.png" alt="alt"/>
+                    <img className="mobile-popup-brand" src="https://cdn-icons-png.flaticon.com/512/732/732110.png" alt="alt"/>
+                    <img className="mobile-popup-brand" src="https://img.freepik.com/free-icon/twitter_318-788985.jpg?w=2000" alt="alt"/>
+                    <img className="mobile-popup-brand" src="https://seeklogo.com/images/I/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png" alt="alt"/>
+                  </div>
+                </div>
+            </div>
+            
           </Flex>
         </Flex>
       </div>
