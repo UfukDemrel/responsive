@@ -81,6 +81,7 @@ export default function Navbar() {
             </HStack>
             <IconButton
             size={"md"}
+            className="mobile-header-iconbutton"
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
@@ -88,8 +89,9 @@ export default function Navbar() {
           />
           {isOpen ? (
             <Box pb={1} display={{ md: "none" }}>
-              <Stack as={"nav"} spacing={4}>
+              <Stack as={"nav"} spacing={4} className="mobile-header-menu">
                 <Button
+                  className="mobile-header-button"
                   onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
@@ -103,6 +105,7 @@ export default function Navbar() {
                 </Button>
 
                 <Button
+                  className="mobile-header-button"
                   onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
@@ -115,6 +118,7 @@ export default function Navbar() {
                 </Button>
 
                 <Button
+                  className="mobile-header-button"
                   onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",

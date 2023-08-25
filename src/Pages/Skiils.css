@@ -5,16 +5,6 @@
         margin-bottom: 10%;
     }
     
-    .little-music{
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        z-index: 10;
-        margin-left: 5%;
-        margin-top: 4%;
-        opacity: 0;
-    }
-    
     .content {
         width: 100%;
         overflow: hidden;
@@ -35,9 +25,19 @@
     .little-div{
         display: inline-flex;
     }
+
+    .little-music{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        z-index: 10;
+        margin-left: 16%;
+        margin-top: 16%;
+        opacity: 0;
+    }
     
     .little-new-song{
-        color: white;
+        color: black;
         font-size: 13px;
         font-family: 'Inter';
         padding:0;
@@ -45,7 +45,7 @@
     }
     
     .little-new-artist{
-        color: rgb(157, 157, 157);
+        color: rgb(98, 98, 98);
         font-size: 11px;
         font-family: 'Inter';
         padding:0;
@@ -54,9 +54,17 @@
     
     .little-div-pacet{
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 0%;
         gap: 0 3%;
+    }
+
+    .new-h1{
+        color: black;
+        display: inline-flex;
+        font-size: 25px;
+        font-weight: 100;
+        font-family: inter, sans serif;
     }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
@@ -224,7 +232,7 @@
     }
     
     .little-new-song{
-        color: white;
+        color: black;
         font-size: 13px;
         font-family: 'Inter';
         padding:0;
@@ -232,7 +240,7 @@
     }
     
     .little-new-artist{
-        color: rgb(157, 157, 157);
+        color: rgb(97, 97, 97);
         font-size: 11px;
         font-family: 'Inter';
         padding:0;

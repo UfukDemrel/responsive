@@ -9,7 +9,7 @@ const Skills = () => {
 
   return (
     <div id="Skills" style={{height: "800px", padding: "7% 0" }}>
-      <h1 className="new-span">Choices</h1>
+      <h1 className="new-h1">Choices</h1>
       <div className='little-div-pacet'>
         <Little title="Mert Demir" text="İkimize Birden" number={numberValues} music="ikimizebirden.mp3" image="https://mp3kutu.com/album/mert-demir-ikimize-birden.jpg"/>
 

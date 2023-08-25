@@ -10,6 +10,20 @@ b{
     #itemNav {
       display: none;
     }
+
+    .mobile-header-iconbutton{
+      background: white !important;
+      color: black;
+    }
+
+    .mobile-header-menu{
+      margin-top: 155%;
+    }
+
+    .mobile-header-button{
+      background-color: white !important;
+      border: 1px solid #d7d5d5 !important;
+    }
   }
 
   @media only screen and (min-width: 768px) {
