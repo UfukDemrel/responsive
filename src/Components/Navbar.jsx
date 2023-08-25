@@ -93,7 +93,7 @@ export default function Navbar() {
               </HStack>
             </HStack>
 
-            <div className={`App ${isNavOpen ? 'nav-open' : ''}`}>
+            <div className={`mobile ${isNavOpen ? 'nav-open' : ''}`}>
                 <button className={`nav-button ${isMenuButtonOpen ? 'close-button' : ''}`} onClick={toggleNav}>
                 <img src={isMenuButtonOpen ? 'close.png' : 'menu.png'} alt={isMenuButtonOpen ? 'Close' : 'Menu'}/>
                 </button>
@@ -107,7 +107,7 @@ export default function Navbar() {
                       <li class="nav-item delay-3"><a onClick={closeNav} className="nav-link" href="#Skills">Choices</a></li>
                     </ul>
                   </div>
-                  <div>
+                  <div className="mobile-brand">
                     <img className="mobile-popup-brand" src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" alt="alt"/>
                     <img className="mobile-popup-brand" src="https://cdn-icons-png.flaticon.com/512/154/154874.png" alt="alt"/>
                     <img className="mobile-popup-brand" src="https://static-00.iconduck.com/assets.00/youtube-music-icon-512x512-tzy5jsl3.png" alt="alt"/>

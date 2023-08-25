@@ -557,18 +557,18 @@
 }
 
 .lyrics{
-  width: 55%;
+  width: 57%;
   display: inline-block;
-  top: 40%;
+  top: 37%;
   left: 40%;
   position: absolute;
-  background-color: black;
+  background-color: white;
   border-radius: 2px;
   padding: 10px;
 }
 
 .lyrics-title{
-  font-size: 42px;
+  font-size: 35px;
   font-weight: 700;
   font-family: inter, sans serif;
   display: flex;
@@ -577,7 +577,7 @@
   justify-content: left;
   margin-top: auto;
   margin-bottom: auto;
-  color: white;
+  color: black;
 }
 
 .lyrics-text{
@@ -590,7 +590,7 @@
   justify-content: left;
   margin-top: auto;
   margin-bottom: auto;
-  color: white;
+  color: black;
 }
 
 .logo-text {
