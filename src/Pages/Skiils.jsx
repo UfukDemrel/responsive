@@ -81,7 +81,7 @@ const Skills = () => {
 
         <Little title="Carla Morrison" text="Disfruto" number={numberValues} music="disfruto.mp3" image="https://i1.sndcdn.com/artworks-zFgejISeUBD2u9Xi-YRzsZQ-t500x500.jpg"/>
 
-    </div>
+      </div>
     </div>
   );
 };

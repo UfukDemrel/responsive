@@ -32,6 +32,7 @@ const myFunction = () => {
     <SwiperSlide>
         <Slider name="The Chainsmokers & Coldplay" song="Something Just Like This" bimg="chainsmokers.jpg" limg="https://upload.wikimedia.org/wikipedia/tr/5/57/Something_Just_Like_This.png" music="chainsmokers.mp3" />
     </SwiperSlide>
+    
     </Swiper>
   );
 };

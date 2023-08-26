@@ -220,6 +220,22 @@
         font-family: inter, sans serif;
         margin-bottom: 2%;
     }
+
+    .new-img{
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .search-box{
+        margin-bottom: 2%;
+        border: 1px solid #b8b8b8;
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 15px;
+        font-family: inter, sans serif;
+        width: 30%;
+        text-align: center;
+    }
     
     .swiper-pagination-bullet{
         display: none;
