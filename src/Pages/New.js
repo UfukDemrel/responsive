@@ -215,6 +215,7 @@ const musicList = [
   }
 ];
 
+
 const New = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -255,15 +256,13 @@ const New = () => {
 
   return (
     <div className="new-container">
-      <div className="search-bar">
-        <img src='search.png' alt='alt'/>
-        <input
-          className='search-box'
-          type="text"
-          placeholder="What do you want to listen to?"
-          value={searchQuery}
-          onChange={handleSearch}
-        />
+      <div>
+      <div class="search-box">
+        <input type="text" className="search-txt" name="" placeholder="Search" value={searchQuery} onChange={handleSearch}/>
+        <div className="search-btn">
+         <img className='search-icon' src='search.png' alt='alt'/>
+        </div>
+      </div>
       </div>
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}

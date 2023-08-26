@@ -6,8 +6,7 @@ const About = () => {
   const [searchQuery] = useState('');
 
   return (
-    <div id="About" style={{ padding: "7% 0" }}>
-      <h1 className="new-span">New Releases</h1>
+    <div id="About" style={{ padding: "13% 0" }}>
       <New searchQuery={searchQuery} />
     </div>
   );
