@@ -62,20 +62,20 @@ export default function Navbar() {
                 <Button className="btnRes background">
                   <a href="#Home">
                     {" "}
-                    <b>Home</b>
+                    <b>Ana sayfa</b>
                   </a>
                 </Button>
 
                 <Button className="btnRes background">
                   <a href="#About">
-                    <b>New Releases</b>
+                    <b>Yeni Çıkanlar</b>
                   </a>
                 </Button>
 
                 <Button className="btnRes background">
                   <a href="#Skills">
                     {" "}
-                    <b>Choices</b>
+                    <b>Kitaplığım</b>
                   </a>
                 </Button>
 
@@ -102,9 +102,9 @@ export default function Navbar() {
                 <img className="mobile-popup-img" src='w.png' alt='alt'/>
                   <div class="flex-center p-5">
                     <ul class="nav flex-column">
-                      <li class="nav-item delay-1"><a onClick={closeNav} className="nav-link" href="#Home">Home</a></li>
-                      <li class="nav-item delay-2"><a onClick={closeNav} className="nav-link" href="#About">Music</a></li>
-                      <li class="nav-item delay-3"><a onClick={closeNav} className="nav-link" href="#Skills">Choices</a></li>
+                      <li class="nav-item delay-1"><a onClick={closeNav} className="nav-link" href="#Home">Ana sayfa</a></li>
+                      <li class="nav-item delay-2"><a onClick={closeNav} className="nav-link" href="#About">Yeni Çıkanlar</a></li>
+                      <li class="nav-item delay-3"><a onClick={closeNav} className="nav-link" href="#Skills">Kitaplığım</a></li>
                     </ul>
                   </div>
                   <div className="mobile-brand">

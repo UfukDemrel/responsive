@@ -64,12 +64,6 @@ const musicList = [
     audio: 'basimabelasin.mp3',
   },
   {
-    title: 'Whats Up Danger?',
-    artist: 'Blackway & Black Caviar',
-    image: 'https://i.discogs.com/U8yh1_RvxRKuj8jFkHCVCuFwPkH-DUrjFrkarI7c6_I/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTQ2/Nzg0LTE1NDUwODg4/MDYtNDU4My5qcGVn.jpeg',
-    audio: 'blackway.mp3',
-  },
-  {
     title: 'Sen mi ben mi?',
     artist: 'KÖK$VL',
     image: 'koksal.jpeg',
