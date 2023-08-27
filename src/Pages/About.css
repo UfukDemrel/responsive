@@ -7,13 +7,13 @@
     }
     
     .new-song{
-        color: black;
+        color: white;
         font-size: 13px;
         font-family: 'Inter';
     }
     
     .new-artist{
-        color: black;
+        color: white;
         font-size: 11px;
         font-family: 'Inter';
         margin-bottom: 2%;
@@ -113,13 +113,13 @@
     }
     
     .new-song{
-        color: black;
+        color: white;
         font-size: 13px;
         font-family: 'Inter';
     }
     
     .new-artist{
-        color: black;
+        color: white;
         font-size: 11px;
         font-family: 'Inter';
         margin-bottom: 2%;
@@ -214,13 +214,13 @@
     }
     
     .new-song{
-        color: black;
+        color: white;
         font-size: 13px;
         font-family: 'Inter';
     }
     
     .new-artist{
-        color: black;
+        color: white;
         font-size: 11px;
         font-family: 'Inter';
         margin-bottom: 2%;
@@ -319,13 +319,13 @@
     }
     
     .new-song{
-        color: black;
+        color: white;
         font-size: 13px;
         font-family: 'Inter';
     }
     
     .new-artist{
-        color: black;
+        color: white;
         font-size: 11px;
         font-family: 'Inter';
         margin-bottom: 2%;
@@ -346,7 +346,7 @@
         transform: translate(-50%, -50%);
         border-radius: 40px;
         height: 40px;
-        background: black;
+        background: white;
         margin-bottom: 3%;
     }
       
@@ -356,7 +356,7 @@
     }
       
     .search-box:hover .search-btn {
-        background: #fff;
+        background: black;
     }
       
     .search-txt {

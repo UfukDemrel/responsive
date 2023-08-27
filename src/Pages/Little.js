@@ -53,8 +53,8 @@ function Little(props) {
 
       <div className='content'>
         <img className='little-music-img' src={props.image} alt='alt' />
-        <h3 className='little-new-song'>{props.title}</h3>
-        <p className='little-new-artist'>{props.text}</p>
+        <h3 className='little-new-song'>{props.text}</h3>
+        <p className='little-new-artist'>{props.title}</p>
       </div>
     </div>
   );

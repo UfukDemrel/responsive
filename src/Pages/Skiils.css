@@ -37,11 +37,10 @@
     }
     
     .little-new-song{
-        color: black;
+        color: white;
         font-size: 13px;
         font-family: 'Inter';
         padding:0;
-        margin-top: 4%;
     }
     
     .little-new-artist{
@@ -60,7 +59,7 @@
     }
 
     .new-h1{
-        color: black;
+        color: white;
         display: inline-flex;
         font-size: 25px;
         font-weight: 400;
@@ -126,7 +125,6 @@
         font-size: 13px;
         font-family: 'Inter';
         padding:0;
-        margin-top: 4%;
     }
     
     .little-new-artist{
@@ -145,7 +143,7 @@
     }
 
     .new-h1{
-        color: black;
+        color: white;
         display: inline-flex;
         font-size: 25px;
         font-weight: 400;
@@ -214,7 +212,6 @@
         font-size: 13px;
         font-family: 'Inter';
         padding:0;
-        margin-top: 4%;
     }
     
     .little-new-artist{
@@ -233,7 +230,7 @@
     }
 
     .new-h1{
-        color: black;
+        color: white;
         display: inline-flex;
         font-size: 25px;
         font-weight: 400;
@@ -296,15 +293,15 @@
     }
     
     .little-new-song{
-        color: black;
+        color: white;
         font-size: 13px;
         font-family: 'Inter';
         padding:0;
-        margin-top: 4%;
+        margin-top: 5%;
     }
     
     .little-new-artist{
-        color: rgb(97, 97, 97);
+        color: white;
         font-size: 11px;
         font-family: 'Inter';
         padding:0;
@@ -329,7 +326,7 @@
     }
 
     .new-h1{
-        color: black;
+        color: white;
         display: inline-flex;
         font-size: 25px;
         font-weight: 400;
