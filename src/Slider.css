@@ -61,7 +61,7 @@
   background: none;
   padding: 0;
   position: absolute;
-  top: 38%;
+  top: 36%;
   display: flex;
   justify-content: center;
 }
@@ -89,8 +89,9 @@
   top: 63%;
   padding: 12px;
   position: absolute;
-  background: white;
+  background: black;
   border-radius: 2px;
+  color: white;
 }
 
 .lyrics-text{
@@ -104,7 +105,8 @@
   padding: 12px;
   position: absolute;
   top: 78%;
-  background: white;
+  background: black;
+  color: white;
   width: 100%;
 }
 
@@ -174,7 +176,7 @@
     background: none;
     padding: 0;
     position: absolute;
-    top: 38%;
+    top: 32%;
     display: flex;
     justify-content: center;
   }
@@ -202,8 +204,9 @@
     top: 63%;
     padding: 12px;
     position: absolute;
-    background: white;
+    background: black;
     border-radius: 2px;
+    color: white;
   }
   
   .lyrics-text{
@@ -217,13 +220,14 @@
     padding: 12px;
     position: absolute;
     top: 78%;
-    background: white;
+    background: black;
     width: 100%;
+    color: white;
   }
   
   .logo-text {
     background-color: #04AA6D;
-    color: white;
+    color:  white;
     font-size: 16px;
     padding: 16px 32px;
   }
@@ -286,7 +290,7 @@
     background: none;
     padding: 0;
     position: absolute;
-    top: 38%;
+    top: 35%;
     display: flex;
     justify-content: center;
   }
@@ -314,8 +318,9 @@
     top: 63%;
     padding: 12px;
     position: absolute;
-    background: white;
+    background: black;
     border-radius: 2px;
+    color: white;
   }
   
   .lyrics-text{
@@ -329,7 +334,8 @@
     padding: 12px;
     position: absolute;
     top: 78%;
-    background: white;
+    background: black;
+    color: white;
     width: 100%;
   }
   

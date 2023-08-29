@@ -45,7 +45,6 @@ function Little(props) {
           style={{ display: 'none' }}
           className="audio"
           ref={(element) => (audioRefs.current[props.number] = element)}
-          controls
         >
           <source src={props.music} type="audio/mpeg" />
         </audio>

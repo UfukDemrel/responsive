@@ -98,13 +98,13 @@ export default function Navbar() {
                 <img src={isMenuButtonOpen ? 'close.png' : 'menu.png'} alt={isMenuButtonOpen ? 'Close' : 'Menu'}/>
                 </button>
 
-                <div class="fixed-top dineuron-menu">
+                <div className="fixed-top dineuron-menu">
                 <img className="mobile-popup-img" src='w.png' alt='alt'/>
-                  <div class="flex-center p-5">
-                    <ul class="nav flex-column">
-                      <li class="nav-item delay-1"><a onClick={closeNav} className="nav-link" href="#Home">Ana sayfa</a></li>
-                      <li class="nav-item delay-2"><a onClick={closeNav} className="nav-link" href="#About">Yeni Çıkanlar</a></li>
-                      <li class="nav-item delay-3"><a onClick={closeNav} className="nav-link" href="#Skills">Kitaplığım</a></li>
+                  <div className="flex-center p-5">
+                    <ul className="nav flex-column">
+                      <li className="nav-item delay-1"><a onClick={closeNav} className="nav-link" href="#Home">Ana sayfa</a></li>
+                      <li className="nav-item delay-2"><a onClick={closeNav} className="nav-link" href="#About">Yeni Çıkanlar</a></li>
+                      <li className="nav-item delay-3"><a onClick={closeNav} className="nav-link" href="#Skills">Kitaplığım</a></li>
                     </ul>
                   </div>
                   <div className="mobile-brand">

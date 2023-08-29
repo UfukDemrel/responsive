@@ -251,7 +251,7 @@ const New = () => {
   return (
     <div className="new-container">
       <div>
-      <div class="search-box">
+      <div className="search-box">
         <input type="text" className="search-txt" name="" placeholder="Search" value={searchQuery} onChange={handleSearch}/>
         <div className="search-btn">
          <img className='search-icon' src='search.png' alt='alt'/>

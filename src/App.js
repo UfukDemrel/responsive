@@ -5,7 +5,7 @@ import './Pages/Skiils.css';
 import Navbar from './Components/Navbar';
 import About from './Pages/About';
 import Home from './Pages/Home';
-import Skills from './Pages/Skiils';
+import Skills from './Pages/Skills';
 
 function App() {
   const [loading, setLoading] = useState(true);
