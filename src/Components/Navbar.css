@@ -112,8 +112,12 @@ b{
     .mobile-popup-img{
       width: 20%;
       display: flex;
-      margin-top: 5.5%;
+      /* margin-top: 5.5%; */
       margin-left: 7%;
+    }
+
+    .flex-column{
+      gap: 50px;
     }
 
     .mobile-brand{

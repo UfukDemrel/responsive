@@ -95,11 +95,11 @@ export default function Navbar() {
 
             <div className={`mobile ${isNavOpen ? 'nav-open' : ''}`}>
                 <button className={`nav-button ${isMenuButtonOpen ? 'close-button' : ''}`} onClick={toggleNav}>
-                <img src={isMenuButtonOpen ? 'close.png' : 'menu.png'} alt={isMenuButtonOpen ? 'Close' : 'Menu'}/>
+                <img src={isMenuButtonOpen ? 'close.png' : 'menu.jpg'} alt={isMenuButtonOpen ? 'Close' : 'Menu'}/>
                 </button>
 
                 <div className="fixed-top dineuron-menu">
-                <img className="mobile-popup-img" src='w.png' alt='alt'/>
+                <img className="mobile-popup-img" src='w2.png' alt='alt'/>
                   <div className="flex-center p-5">
                     <ul className="nav flex-column">
                       <li className="nav-item delay-1"><a onClick={closeNav} className="nav-link" href="#Home">Ana sayfa</a></li>
